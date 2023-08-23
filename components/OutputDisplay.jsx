@@ -18,10 +18,10 @@ const OutputDisplay = () => {
   const frameCount = 145;
 
   const zip = new JSZip();
-
+let backup = "https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/";
   const currentFrame = (index) => {
     const baseUrl =
-      "https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/";
+      "https://www.apple.com/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/medium/";
     return progress === 100
       ? generatedImages[index]?.currentSrc
       : `${baseUrl}${String(index).padStart(4, "0")}.jpg`;
